@@ -60,6 +60,7 @@ namespace Lineage_Game
         {
             角色 A = new 角色();
             A.角色名稱 = "基隆維尼熊";
+            A.走路();
             A.喝體力藥水();
             A.打怪物();
 
