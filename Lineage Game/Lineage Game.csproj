@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="遊戲Method.cs" />
     <Compile Include="Lineage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
