@@ -20,6 +20,7 @@ namespace Lineage_Game
             {
                 Console.WriteLine(角色名稱 + "往前走了一格，並扣除體力1點！");
                 角色體力 -= 1;
+                Console.ReadKey();
             }
 
             //定義方法2
@@ -27,7 +28,8 @@ namespace Lineage_Game
             {
                 Console.WriteLine(角色名稱 + "喝下紅色藥水，並回復體力3點！");
                 角色體力 += 3;
-            }
+                Console.ReadKey();
+              }
 
             //定義方法3
             public void 打怪物()
@@ -36,7 +38,8 @@ namespace Lineage_Game
                 int 剩餘體力=角色體力 -= 2;
                 int 剩餘生命=角色生命 -= 1;
                 int 總經驗值=角色經驗值 += 3;
-            }
+                Console.ReadKey();
+              }
         }
 
         public class 怪物  //建立怪物類別
@@ -50,21 +53,6 @@ namespace Lineage_Game
             {
                 Console.WriteLine("我是" + 怪物名稱 + "快來與我一決死戰吧！");
             }
-        }
-
-         void Start()
-        {
-            角色 A = new 角色();
-            A.角色名稱 = "基隆維尼熊";
-            A.走路();
-            A.喝體力藥水();
-            A.打怪物();
-
-            怪物 哥布林 = new 怪物();
-            哥布林.怪物名稱 = "哥布林";
-            哥布林.攻擊力 = 1;
-            哥布林.經驗值 = 3;
-            哥布林.挑釁();
         }
   }
 
