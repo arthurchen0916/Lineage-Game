@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lineage_Game
 {
-    public class Lineage
-    {
-        static void Main(string[] args) { }
-        
-            class 角色  //建立角色類別
-        {
+            public class 角色  //建立角色類別
+          {
             //定義角色屬性
             public string 角色名稱;
             public int 角色等級 = 1;
@@ -34,16 +30,16 @@ namespace Lineage_Game
             }
 
             //定義方法3
-            public void 打怪物(怪物 某個怪物)
+            public void 打怪物()
             {
-                Console.WriteLine(角色名稱 + "擊殺了眼前的"+某個怪物.怪物名稱+"，並消耗了2點體力、"+某個怪物.攻擊力+"點生命值，獲得了exp"+某個怪物.經驗值+"點！");
+                Console.WriteLine(角色名稱 + "擊殺了眼前的，並消耗了2點體力、1點生命值，獲得了exp3點！");
                 int 剩餘體力=角色體力 -= 2;
                 int 剩餘生命=角色生命 -= 1;
                 int 總經驗值=角色經驗值 += 3;
             }
         }
 
-        class 怪物  //建立怪物類別
+        public class 怪物  //建立怪物類別
         {
             //定義怪物屬性
             public string 怪物名稱;
@@ -56,23 +52,20 @@ namespace Lineage_Game
             }
         }
 
-        void Start()
+         void Start()
         {
             角色 A = new 角色();
             A.角色名稱 = "基隆維尼熊";
             A.走路();
             A.喝體力藥水();
-
+            A.打怪物();
 
             怪物 哥布林 = new 怪物();
             哥布林.怪物名稱 = "哥布林";
             哥布林.攻擊力 = 1;
             哥布林.經驗值 = 3;
             哥布林.挑釁();
-
-            A.打怪物(哥布林);
         }
-     }
- }
+  }
 
 

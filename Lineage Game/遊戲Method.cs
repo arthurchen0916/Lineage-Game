@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lineage_Game;
 
 namespace ConsoleApp5
 {
@@ -13,7 +14,7 @@ namespace ConsoleApp5
             switch (Console.ReadLine().ToString())
             {
                 case "1":
-                    var x = new Lineage();
+                    var x = new 角色();
                     x.走路();
                     break;
 
@@ -23,7 +24,7 @@ namespace ConsoleApp5
                     break;
 
                 case "3":
-                    var z = new Lineage();
+                    var z = new 角色();
                     z.打怪物();
                     break;
             }
